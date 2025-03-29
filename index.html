@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crimillion</title>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
         
@@ -11,7 +12,8 @@
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0d0d0d;
+            overflow: hidden;
+            background: linear-gradient(340deg, rgb(1, 9, 0) 0%, rgb(17, 26, 13) 100%);
             color: #ffffff;
             display: flex;
         }
@@ -39,10 +41,14 @@
         .sidebar {
             width: 250px;
             background-color: #1a1a1a;
+            background:
+                radial-gradient(ellipse at top, #000000, transparent),
+                radial-gradient(ellipse at bottom, #161616, transparent);
             height: 100vh;
             padding: 20px;
             display: flex;
             flex-direction: column;
+            box-shadow: 0 0 200px rgb(0, 0, 0);
         }
 
         .sidebar h2 {
@@ -60,7 +66,7 @@
             color: #ffffff;
             text-decoration: none;
             border-radius: 8px;
-            transition: background 0.3s;
+            transition: background 0.4s;
             font-weight: 400;
         }
 
@@ -81,10 +87,10 @@
         }
 
         .table-container {
-            background-color: #1a1a1a;
+            background: linear-gradient(15, rgb(32, 32, 32) 0%, rgb(0, 0, 0) 100%);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 100px rgba(51, 255, 0, 0.118);
         }
 
         table {
@@ -142,23 +148,7 @@
         }
     </style>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="icon.png" type="image/png">
 </head>
 <body>
     <!-- Sidebar -->
@@ -177,7 +167,7 @@
     <!-- Main Content -->
     <div class="main-content">
         <div class="table-container">
-            <h2 style="color: black; font-size: 2rem; line-height: 2.5rem; letter-spacing: -1.28px; font-weight: 600;">Account Overview</h2>
+            <h2>Account Overview</h2>
             <table>
                 <thead>
                     <tr>
